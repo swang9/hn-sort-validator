@@ -1,0 +1,713 @@
+{
+  "runAt": "2026-03-14T22:09:02.930Z",
+  "passed": true,
+  "elapsed": 0.9,
+  "timeSpan": "2h 6m",
+  "summary": {
+    "articlesChecked": 100,
+    "sortViolations": 0,
+    "missingTimestamps": 0
+  },
+  "articles": [
+    {
+      "rank": 1,
+      "title": "Changes to OpenTTD Distribution on Steam",
+      "href": "https://www.openttd.org/news/2026/03/14/steam-changes",
+      "timestamp": "2026-03-14T22:04:48",
+      "status": "pass"
+    },
+    {
+      "rank": 2,
+      "title": "Memorize song&audio files through splitting and repeating parts automatically",
+      "href": "https://soundsplitter.vercel.app/",
+      "timestamp": "2026-03-14T22:04:14",
+      "status": "pass"
+    },
+    {
+      "rank": 3,
+      "title": "Ask HN: Do you care if coding agents use your generated code for training?",
+      "href": "https://news.ycombinator.com/item?id=47381738",
+      "timestamp": "2026-03-14T22:03:54",
+      "status": "pass"
+    },
+    {
+      "rank": 4,
+      "title": "Allow me to get to know you, mistakes and all",
+      "href": "https://sebi.io/posts/2026-03-14-allow-me-to-get-to-know-you-mistakes-and-all/",
+      "timestamp": "2026-03-14T22:03:47",
+      "status": "pass"
+    },
+    {
+      "rank": 5,
+      "title": "Learning Creative Coding",
+      "href": "https://stigmollerhansen.dk/resume/learning-creative-coding/",
+      "timestamp": "2026-03-14T22:02:48",
+      "status": "pass"
+    },
+    {
+      "rank": 6,
+      "title": "Deprecating the DHE cipher suite for TLS connections",
+      "href": "https://vercel.com/changelog/deprecating-the-dhe-cipher-suite-for-tls-connections",
+      "timestamp": "2026-03-14T22:01:26",
+      "status": "pass"
+    },
+    {
+      "rank": 7,
+      "title": "AI Elements 1.9 is now available",
+      "href": "https://vercel.com/changelog/ai-elements-1-9",
+      "timestamp": "2026-03-14T22:00:23",
+      "status": "pass"
+    },
+    {
+      "rank": 8,
+      "title": "Vigil v1.1 – Open-source security ops platform with embedded AI brain",
+      "href": "https://github.com/vigil-agency/vigil",
+      "timestamp": "2026-03-14T21:59:02",
+      "status": "pass"
+    },
+    {
+      "rank": 9,
+      "title": "Anti-Slop: A GitHub action that detects and automatically closes AI slop PRs",
+      "href": "https://github.com/peakoss/anti-slop",
+      "timestamp": "2026-03-14T21:58:10",
+      "status": "pass"
+    },
+    {
+      "rank": 10,
+      "title": "Show HN: Costly – Open-source SDK that audits your LLM API costs",
+      "href": "https://www.getcostly.dev/",
+      "timestamp": "2026-03-14T21:57:33",
+      "status": "pass"
+    },
+    {
+      "rank": 11,
+      "title": "Mystery Radio Signal from Day One of US-Iran War [video]",
+      "href": "https://www.youtube.com/watch?v=NlcIEmYfTmc",
+      "timestamp": "2026-03-14T21:52:03",
+      "status": "pass"
+    },
+    {
+      "rank": 12,
+      "title": "Show HN: I built an open-source agent-run trading fund with real capital",
+      "href": "https://github.com/CrunchyJohnHaven/elastifund",
+      "timestamp": "2026-03-14T21:49:33",
+      "status": "pass"
+    },
+    {
+      "rank": 13,
+      "title": "Tech boss uses AI and ChatGPT to create cancer vaccine for his dying dog",
+      "href": "https://theaustralian.com.au/business/technology/tech-boss-uses-ai-and-chatgpt-to-create-cancer-vaccine-for-his-dying-dog/news-story/292a21bcbe93efa17810bfcfcdfadbf7?123#qwe",
+      "timestamp": "2026-03-14T21:47:04",
+      "status": "pass"
+    },
+    {
+      "rank": 14,
+      "title": "What People Want from Our Schools Has Never Been Accomplished, Anywhere",
+      "href": "https://freddiedeboer.substack.com/p/what-people-want-from-our-schools",
+      "timestamp": "2026-03-14T21:44:19",
+      "status": "pass"
+    },
+    {
+      "rank": 15,
+      "title": "Kalshi co-founder on risky predictions she made that led to $1B",
+      "href": "https://www.cnbc.com/2026/03/14/kalshi-prediction-markets-bet-luana-lopes-lara.html",
+      "timestamp": "2026-03-14T21:44:12",
+      "status": "pass"
+    },
+    {
+      "rank": 16,
+      "title": "Show HN: I built a TUI that dissolves Git branches away in Thanos style",
+      "href": "https://github.com/armgabrielyan/deadbranch",
+      "timestamp": "2026-03-14T21:44:11",
+      "status": "pass"
+    },
+    {
+      "rank": 17,
+      "title": "An AI skeptic's case for recursive self-improvement",
+      "href": "https://hardlyworking1.substack.com/p/a-skeptical-case-for-taking-the-ai",
+      "timestamp": "2026-03-14T21:42:12",
+      "status": "pass"
+    },
+    {
+      "rank": 18,
+      "title": "Everyone is focusing on AI, we're focusing on humans",
+      "href": "https://news.ycombinator.com/item?id=47381501",
+      "timestamp": "2026-03-14T21:39:14",
+      "status": "pass"
+    },
+    {
+      "rank": 19,
+      "title": "ByteDance suspends launch of Seedance 2.0 after copyright disputes",
+      "href": "https://www.reuters.com/technology/bytedance-suspends-launch-video-ai-model-after-copyright-disputes-information-2026-03-14/",
+      "timestamp": "2026-03-14T21:38:09",
+      "status": "pass"
+    },
+    {
+      "rank": 20,
+      "title": "Show HN: MailParse – Inbound email to structured JSON via API",
+      "href": "https://www.mailparse.dev/",
+      "timestamp": "2026-03-14T21:37:55",
+      "status": "pass"
+    },
+    {
+      "rank": 21,
+      "title": "Ek_ Leaks Persist",
+      "href": "https://news.ycombinator.com/item?id=47381484",
+      "timestamp": "2026-03-14T21:37:46",
+      "status": "pass"
+    },
+    {
+      "rank": 22,
+      "title": "A Preview of Coalton 0.2",
+      "href": "https://coalton-lang.github.io/20260312-coalton0p2/",
+      "timestamp": "2026-03-14T21:36:51",
+      "status": "pass"
+    },
+    {
+      "rank": 23,
+      "title": "How \"Hardwired\" AI Will Destroy Nvidia's Empire and Change the World",
+      "href": "https://medium.com/@mokrasar/the-last-chip-how-hardwired-ai-will-destroy-nvidias-empire-and-change-the-world-8da20571e706",
+      "timestamp": "2026-03-14T21:36:36",
+      "status": "pass"
+    },
+    {
+      "rank": 24,
+      "title": "Show HN: Replacing $50k manual forensic audits with a deterministic .py engine",
+      "href": "https://news.ycombinator.com/item?id=47381471",
+      "timestamp": "2026-03-14T21:36:13",
+      "status": "pass"
+    },
+    {
+      "rank": 25,
+      "title": "Validation is your agent's bottleneck",
+      "href": "https://www.nicowil.me/posts/the-missing-validation-layer/",
+      "timestamp": "2026-03-14T21:35:18",
+      "status": "pass"
+    },
+    {
+      "rank": 26,
+      "title": "Visual React Layout Builder",
+      "href": "https://reactorlowcode.com/",
+      "timestamp": "2026-03-14T21:35:11",
+      "status": "pass"
+    },
+    {
+      "rank": 27,
+      "title": "Why DuckDuckGo is building its own web search index",
+      "href": "https://insideduckduckgo.substack.com/p/duck-tales-why-duckduckgo-is-building",
+      "timestamp": "2026-03-14T21:33:03",
+      "status": "pass"
+    },
+    {
+      "rank": 28,
+      "title": "Show HN: AI coding agent for VS Code with pay-as-you-go pricing- no subscription",
+      "href": "https://www.llmonestop.com/#pricing",
+      "timestamp": "2026-03-14T21:30:09",
+      "status": "pass"
+    },
+    {
+      "rank": 29,
+      "title": "Why Switzerland is a 3rd world country",
+      "href": "https://medium.com/leapfrog/why-switzerland-is-a-3rd-world-country-7fe5d67a079",
+      "timestamp": "2026-03-14T21:29:24",
+      "status": "pass"
+    },
+    {
+      "rank": 30,
+      "title": "Show HN: My OS can run Doom",
+      "href": "https://monolith-project.org/blog/march-2026-update/",
+      "timestamp": "2026-03-14T21:28:36",
+      "status": "pass"
+    },
+    {
+      "rank": 31,
+      "title": "Ethical Web Principles",
+      "href": "https://www.w3.org/TR/ethical-web-principles/",
+      "timestamp": "2026-03-14T21:28:28",
+      "status": "pass"
+    },
+    {
+      "rank": 32,
+      "title": "Show HN: Han – A Korean programming language written in Rust",
+      "href": "https://github.com/xodn348/han",
+      "timestamp": "2026-03-14T21:27:33",
+      "status": "pass"
+    },
+    {
+      "rank": 33,
+      "title": "Show HN: ZaneOps, A beautiful and fast self hosted alternative to Vercel",
+      "href": "https://zaneops.dev/",
+      "timestamp": "2026-03-14T21:26:12",
+      "status": "pass"
+    },
+    {
+      "rank": 34,
+      "title": "Anthropic invests $100M into the Claude Partner Network",
+      "href": "https://www.anthropic.com/news/claude-partner-network",
+      "timestamp": "2026-03-14T21:23:42",
+      "status": "pass"
+    },
+    {
+      "rank": 35,
+      "title": "Cursor billed us $450 for a seat that existed for seconds",
+      "href": "https://cursor.com/",
+      "timestamp": "2026-03-14T21:23:35",
+      "status": "pass"
+    },
+    {
+      "rank": 36,
+      "title": "You Can Just Deploy Things",
+      "href": "https://nickdichev.com/blog/you-can-just-deploy-things/",
+      "timestamp": "2026-03-14T21:21:32",
+      "status": "pass"
+    },
+    {
+      "rank": 37,
+      "title": "Valyris – startup valuation using 7 VC frameworks",
+      "href": "https://valyris.app/",
+      "timestamp": "2026-03-14T21:20:55",
+      "status": "pass"
+    },
+    {
+      "rank": 38,
+      "title": "The Advanced .exrc File (1991)",
+      "href": "http://urbanjost.altervista.org/LIBRARY/public_html/VI/exrc_files/exrc_ADVANCED.html",
+      "timestamp": "2026-03-14T21:17:24",
+      "status": "pass"
+    },
+    {
+      "rank": 39,
+      "title": "Jared Kushner Solicits Funds for His Firm While Working as Mideast Envoy",
+      "href": "https://www.nytimes.com/2026/03/13/business/jared-kushner-affinity-mideast-funds.html",
+      "timestamp": "2026-03-14T21:16:53",
+      "status": "pass"
+    },
+    {
+      "rank": 40,
+      "title": "A Regular Person Can Utilize AI Agents",
+      "href": "https://weightythoughts.com/p/how-a-regular-person-can-utilize",
+      "timestamp": "2026-03-14T21:15:12",
+      "status": "pass"
+    },
+    {
+      "rank": 41,
+      "title": "Show HN: ngrep – grep plus word embeddings",
+      "href": "https://github.com/0xNaN/ngrep",
+      "timestamp": "2026-03-14T21:15:01",
+      "status": "pass"
+    },
+    {
+      "rank": 42,
+      "title": "Postgres with Builtin File Systems",
+      "href": "https://db9.ai/",
+      "timestamp": "2026-03-14T21:14:03",
+      "status": "pass"
+    },
+    {
+      "rank": 43,
+      "title": "Arther OS – Web desktop environment on the AT Protocol",
+      "href": "https://www.aetheros.computer/",
+      "timestamp": "2026-03-14T21:12:21",
+      "status": "pass"
+    },
+    {
+      "rank": 44,
+      "title": "America gamified its war with Iran",
+      "href": "https://www.axios.com/2026/03/14/the-gamification-of-war",
+      "timestamp": "2026-03-14T21:09:46",
+      "status": "pass"
+    },
+    {
+      "rank": 45,
+      "title": "In search of Banksy, Reuters found the artist took on a new identity",
+      "href": "https://www.reuters.com/investigates/special-report/global-art-banksy/",
+      "timestamp": "2026-03-14T21:07:39",
+      "status": "pass"
+    },
+    {
+      "rank": 46,
+      "title": "Making",
+      "href": "https://beej.us/blog/data/ai-making/",
+      "timestamp": "2026-03-14T21:05:47",
+      "status": "pass"
+    },
+    {
+      "rank": 47,
+      "title": "Show HN: AI Toys that don't need the internet",
+      "href": "https://github.com/akdeb/open-toys/blob/main/README.md",
+      "timestamp": "2026-03-14T21:04:58",
+      "status": "pass"
+    },
+    {
+      "rank": 48,
+      "title": "Show HN: Million Dollar Homepage for AI Agents – agents buy pixels, humans watch",
+      "href": "https://agenticsearchoptimization.ai/",
+      "timestamp": "2026-03-14T21:03:38",
+      "status": "pass"
+    },
+    {
+      "rank": 49,
+      "title": "Andrej Karpathy - AI Exposure of the US Job Market",
+      "href": "https://karpathy.ai/jobs/",
+      "timestamp": "2026-03-14T21:01:16",
+      "status": "pass"
+    },
+    {
+      "rank": 50,
+      "title": "16-agent local AI OS and wrote up the routing and pipeline architecture",
+      "href": "https://news.ycombinator.com/item?id=47381118",
+      "timestamp": "2026-03-14T21:01:14",
+      "status": "pass"
+    },
+    {
+      "rank": 51,
+      "title": "March 2026 Google Search Observations",
+      "href": "https://www.webmasterworld.com/google/5130001-2-30.htm",
+      "timestamp": "2026-03-14T20:59:57",
+      "status": "pass"
+    },
+    {
+      "rank": 52,
+      "title": "$3.5M run rate. +$2M in a week. One founder and AI. Zero employees",
+      "href": "https://polsia.com/live",
+      "timestamp": "2026-03-14T20:56:37",
+      "status": "pass"
+    },
+    {
+      "rank": 53,
+      "title": "Facts About Childhood Today That Will Terrify You",
+      "href": "https://www.afterbabel.com/p/30-facts-about-childhood-today-that",
+      "timestamp": "2026-03-14T20:55:36",
+      "status": "pass"
+    },
+    {
+      "rank": 54,
+      "title": "Show HN: Cloak – send and receive secrets from OpenClaw",
+      "href": "https://cloak.opsy.sh/",
+      "timestamp": "2026-03-14T20:54:42",
+      "status": "pass"
+    },
+    {
+      "rank": 55,
+      "title": "Why investors won't know what to make of AI for a while",
+      "href": "https://economist.com/finance-and-economics/2026/03/12/why-investors-wont-know-what-to-make-of-ai-for-a-while",
+      "timestamp": "2026-03-14T20:49:55",
+      "status": "pass"
+    },
+    {
+      "rank": 56,
+      "title": "Show HN: Json.express – Query and explore JSON in the browser, zero dependencies",
+      "href": "https://json.express/",
+      "timestamp": "2026-03-14T20:49:47",
+      "status": "pass"
+    },
+    {
+      "rank": 57,
+      "title": "Bumblebee queens breathe underwater to survive drowning",
+      "href": "https://www.smithsonianmag.com/science-nature/bumblebee-queens-breathe-underwater-to-survive-drowning-revealing-how-they-can-live-submerged-for-a-week-180988330/",
+      "timestamp": "2026-03-14T20:49:10",
+      "status": "pass"
+    },
+    {
+      "rank": 58,
+      "title": "Show HN: R3forth Visual Debugger [video]",
+      "href": "https://www.youtube.com/watch?v=_gvhfxM5hRg",
+      "timestamp": "2026-03-14T20:47:18",
+      "status": "pass"
+    },
+    {
+      "rank": 59,
+      "title": "Show HN: Pidrive – File storage for AI agents (mount S3, use ls/cat/grep)",
+      "href": "https://pidrive.ressl.ai/",
+      "timestamp": "2026-03-14T20:46:19",
+      "status": "pass"
+    },
+    {
+      "rank": 60,
+      "title": "AI #159: See You in Court",
+      "href": "https://thezvi.substack.com/p/ai-159-see-you-in-court",
+      "timestamp": "2026-03-14T20:45:27",
+      "status": "pass"
+    },
+    {
+      "rank": 61,
+      "title": "Show HN: Docgen – A C++ AI CLI to solve documentation hell with local LLMs",
+      "href": "https://news.ycombinator.com/item?id=47380974",
+      "timestamp": "2026-03-14T20:44:37",
+      "status": "pass"
+    },
+    {
+      "rank": 62,
+      "title": "Ask HN: What was it like for programmers when spreadsheets became ubiquitous?",
+      "href": "https://news.ycombinator.com/item?id=47380940",
+      "timestamp": "2026-03-14T20:40:20",
+      "status": "pass"
+    },
+    {
+      "rank": 63,
+      "title": "Is this real? Susceptibility to deepfakes in machines and humans",
+      "href": "https://link.springer.com/article/10.1186/s41235-025-00700-y",
+      "timestamp": "2026-03-14T20:40:12",
+      "status": "pass"
+    },
+    {
+      "rank": 64,
+      "title": "The Price of College [video]",
+      "href": "https://www.youtube.com/watch?v=qiAZd_Ut9sg",
+      "timestamp": "2026-03-14T20:40:09",
+      "status": "pass"
+    },
+    {
+      "rank": 65,
+      "title": "Reddit Post 3",
+      "href": "https://old.reddit.com/r/PisequaltoNP/comments/1rtu4j5/solving_monotone_sat_in_om_log_n_via_binary/",
+      "timestamp": "2026-03-14T20:38:56",
+      "status": "pass"
+    },
+    {
+      "rank": 66,
+      "title": "Kalverion Bot Overdraft Stopper new release",
+      "href": "https://github.com/bisbeebucky/ai-bot/",
+      "timestamp": "2026-03-14T20:38:16",
+      "status": "pass"
+    },
+    {
+      "rank": 67,
+      "title": "Expanding Ecosystems (Michigan)",
+      "href": "https://midwesthumble.substack.com/p/expanding-ecosystems",
+      "timestamp": "2026-03-14T20:37:39",
+      "status": "pass"
+    },
+    {
+      "rank": 68,
+      "title": "Please don't write about AI with AI",
+      "href": "https://news.ycombinator.com/item?id=47380906",
+      "timestamp": "2026-03-14T20:37:16",
+      "status": "pass"
+    },
+    {
+      "rank": 69,
+      "title": "The medical advice on peanut allergies flipped in a generation",
+      "href": "https://www.cbc.ca/lite/story/9.7125919",
+      "timestamp": "2026-03-14T20:34:44",
+      "status": "pass"
+    },
+    {
+      "rank": 70,
+      "title": "Microservices: Shackles on Your Feet",
+      "href": "https://howtocenterdiv.com/beyond-the-div/microservices-shackles-on-your-feet",
+      "timestamp": "2026-03-14T20:28:34",
+      "status": "pass"
+    },
+    {
+      "rank": 71,
+      "title": "Bellingcat: The Osint Gatekeepers Who Can't Secure Their Own Site",
+      "href": "https://ringmast4r.substack.com/p/the-osint-gatekeepers-who-cant-secure",
+      "timestamp": "2026-03-14T20:24:48",
+      "status": "pass"
+    },
+    {
+      "rank": 72,
+      "title": "Daily pill may cure deadly sleep disorder that affects 84M people",
+      "href": "https://www.dailymail.co.uk/health/article-15643615/pill-cure-sleep-apnea-CPAP-breathing.html",
+      "timestamp": "2026-03-14T20:24:08",
+      "status": "pass"
+    },
+    {
+      "rank": 73,
+      "title": "Ask HN: How do you find collaborators?",
+      "href": "https://news.ycombinator.com/item?id=47380784",
+      "timestamp": "2026-03-14T20:23:51",
+      "status": "pass"
+    },
+    {
+      "rank": 74,
+      "title": "Iran war's Qatari Helium production disruption is a blow to chipmakers like TSMC",
+      "href": "https://finance.yahoo.com/news/iran-war-could-wreak-havoc-on-farmers-create-a-potential-bottleneck-for-the-entire-ai-story-171240723.html",
+      "timestamp": "2026-03-14T20:23:39",
+      "status": "pass"
+    },
+    {
+      "rank": 75,
+      "title": "Meta reportedly plans layoffs as AI costs increase",
+      "href": "https://www.theguardian.com/technology/2026/mar/13/meta-layoffs-ai",
+      "timestamp": "2026-03-14T20:22:24",
+      "status": "pass"
+    },
+    {
+      "rank": 76,
+      "title": "Do you ship vibe coded apps with security issues?",
+      "href": "https://usevibescore.com/",
+      "timestamp": "2026-03-14T20:21:16",
+      "status": "pass"
+    },
+    {
+      "rank": 77,
+      "title": "US told to brace for extreme weather in every single state",
+      "href": "https://www.dailymail.co.uk/news/article-15645675/us-extreme-weather-forecast-weekend-heat-polar-vortex-floods.html",
+      "timestamp": "2026-03-14T20:21:06",
+      "status": "pass"
+    },
+    {
+      "rank": 78,
+      "title": "Where Censored Words Find a Safe Haven: Inside Minecraft",
+      "href": "https://www.nytimes.com/2026/03/11/arts/minecraft-uncensored-library-united-states.html",
+      "timestamp": "2026-03-14T20:18:52",
+      "status": "pass"
+    },
+    {
+      "rank": 79,
+      "title": "The Washington Post Is Using Reader Data to Set Subscription Prices",
+      "href": "https://washingtonian.com/2026/03/12/the-washington-post-is-using-reader-data-to-set-subscription-prices-how-does-that-work/",
+      "timestamp": "2026-03-14T20:18:41",
+      "status": "pass"
+    },
+    {
+      "rank": 80,
+      "title": "Postgres Is the Gateway Drug",
+      "href": "https://viggy28.dev/article/postgres-gateway-drug/",
+      "timestamp": "2026-03-14T20:17:35",
+      "status": "pass"
+    },
+    {
+      "rank": 81,
+      "title": "Back End Aggregation Enables Gigawatt-Scale AI Clusters",
+      "href": "https://engineering.fb.com/2026/02/09/data-center-engineering/building-prometheus-how-backend-aggregation-enables-gigawatt-scale-ai-clusters/",
+      "timestamp": "2026-03-14T20:17:14",
+      "status": "pass"
+    },
+    {
+      "rank": 82,
+      "title": "Library of Short Stories",
+      "href": "https://www.libraryofshortstories.com/",
+      "timestamp": "2026-03-14T20:16:19",
+      "status": "pass"
+    },
+    {
+      "rank": 83,
+      "title": "Millennium Challenge: Iran Destroyed America in a War Game",
+      "href": "https://nationalinterest.org/blog/reboot/millennium-challenge-iran-destroyed-america-war-game-197261",
+      "timestamp": "2026-03-14T20:16:10",
+      "status": "pass"
+    },
+    {
+      "rank": 84,
+      "title": "AI Codemods for Secure-by-Default Android Apps",
+      "href": "https://engineering.fb.com/2026/03/13/android/ai-codemods-secure-by-default-android-apps-meta-tech-podcast/",
+      "timestamp": "2026-03-14T20:15:58",
+      "status": "pass"
+    },
+    {
+      "rank": 85,
+      "title": "Book: The Emerging Science of Machine Learning Benchmarks",
+      "href": "https://mlbenchmarks.org/00-preface.html",
+      "timestamp": "2026-03-14T20:15:03",
+      "status": "pass"
+    },
+    {
+      "rank": 86,
+      "title": "Pipechart – pipe any JSON into your terminal and get a chart, zero dependencies",
+      "href": "https://github.com/davitotty/pipechart",
+      "timestamp": "2026-03-14T20:14:52",
+      "status": "pass"
+    },
+    {
+      "rank": 87,
+      "title": "Show HN: AI Toys that don't need the internet",
+      "href": "https://github.com/akdeb/open-toys",
+      "timestamp": "2026-03-14T20:13:01",
+      "status": "pass"
+    },
+    {
+      "rank": 88,
+      "title": "My fireside chat about agentic engineering at the Pragmatic Summit",
+      "href": "https://simonwillison.net/2026/Mar/14/pragmatic-summit/",
+      "timestamp": "2026-03-14T20:09:28",
+      "status": "pass"
+    },
+    {
+      "rank": 89,
+      "title": "My Wish for Software Engineering",
+      "href": "https://arnoldkling.substack.com/p/my-wish-for-software-engineering",
+      "timestamp": "2026-03-14T20:09:01",
+      "status": "pass"
+    },
+    {
+      "rank": 90,
+      "title": "Claude March 2026 usage promotion",
+      "href": "https://support.claude.com/en/articles/14063676-claude-march-2026-usage-promotion",
+      "timestamp": "2026-03-14T20:08:54",
+      "status": "pass"
+    },
+    {
+      "rank": 91,
+      "title": "Glow: Render Markdown on the CLI, with Pizzazz",
+      "href": "https://github.com/charmbracelet/glow",
+      "timestamp": "2026-03-14T20:08:48",
+      "status": "pass"
+    },
+    {
+      "rank": 92,
+      "title": "I rebuilt a daily habit because the default experience felt broken",
+      "href": "https://apps.apple.com/us/app/brzzy-weather-local-forecasts/id6670187343",
+      "timestamp": "2026-03-14T20:08:13",
+      "status": "pass"
+    },
+    {
+      "rank": 93,
+      "title": "Trump administration to be paid $10B for brokering TikTok deal",
+      "href": "https://www.theguardian.com/technology/2026/mar/14/tiktok-trump-administration-10bn",
+      "timestamp": "2026-03-14T20:07:44",
+      "status": "pass"
+    },
+    {
+      "rank": 94,
+      "title": "Show HN: Paperctl- An Arxiv CLI designed for agents",
+      "href": "https://github.com/ChristianFJung/paperctl",
+      "timestamp": "2026-03-14T20:04:44",
+      "status": "pass"
+    },
+    {
+      "rank": 95,
+      "title": "Activity-based CO2 sensing provides new insights into cellular metabolism",
+      "href": "https://www.sciencedirect.com/science/article/pii/S2213231726000650",
+      "timestamp": "2026-03-14T20:03:56",
+      "status": "pass"
+    },
+    {
+      "rank": 96,
+      "title": "VFA – Cryptographic Intent Handshake for Secure API Transactions",
+      "href": "https://github.com/Csnyi/VFA-Spec",
+      "timestamp": "2026-03-14T20:02:09",
+      "status": "pass"
+    },
+    {
+      "rank": 97,
+      "title": "Cathars and Cathar Beliefs in the Languedoc",
+      "href": "https://www.cathar.info/",
+      "timestamp": "2026-03-14T20:01:57",
+      "status": "pass"
+    },
+    {
+      "rank": 98,
+      "title": "Show HN: Language Life – Learn a language by living a simulated life",
+      "href": "https://www.languagelife.ai/",
+      "timestamp": "2026-03-14T20:01:53",
+      "status": "pass"
+    },
+    {
+      "rank": 99,
+      "title": "DOOM fully rendered in CSS",
+      "href": "https://bsky.app/profile/html5test.com/post/3mgxr3pcjhk2k",
+      "timestamp": "2026-03-14T20:01:53",
+      "status": "pass"
+    },
+    {
+      "rank": 100,
+      "title": "The Anthropic Institute",
+      "href": "https://www.anthropic.com/news/the-anthropic-institute",
+      "timestamp": "2026-03-14T19:58:51",
+      "status": "pass"
+    }
+  ]
+}

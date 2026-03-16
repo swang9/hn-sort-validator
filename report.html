@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HN Sort Validation Report</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f5f5; color: #1a1a1a; }
+    header { background: #ff6600; color: white; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; }
+    header h1 { font-size: 1.4rem; font-weight: 700; }
+    header p { font-size: 0.85rem; opacity: 0.85; margin-top: 4px; }
+    .badge { padding: 6px 16px; border-radius: 20px; font-weight: 700; font-size: 1rem; background: white; }
+    .badge.pass { color: #16a34a; }
+    .badge.fail { color: #dc2626; }
+    .summary { display: flex; gap: 24px; padding: 20px 32px; background: white; border-bottom: 1px solid #e5e5e5; flex-wrap: wrap; }
+    .stat { text-align: center; min-width: 80px; }
+    .stat .value { font-size: 1.8rem; font-weight: 700; }
+    .stat .label { font-size: 0.75rem; color: #666; text-transform: uppercase; letter-spacing: 0.05em; }
+    .stat.violations .value { color: #16a34a; }
+    .stat.missing .value { color: #16a34a; }
+    .table-wrap { padding: 24px 32px; overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    th { background: #1a1a1a; color: white; padding: 12px 16px; text-align: left; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    td { padding: 10px 16px; border-bottom: 1px solid #f0f0f0; font-size: 0.875rem; }
+    tr:last-child td { border-bottom: none; }
+    tr.pass { background: #f0fdf4; }
+    tr.fail { background: #fef2f2; }
+    tr.warn { background: #fffbeb; }
+    .title-cell { max-width: 520px; }
+    .title-cell a { color: #1d4ed8; text-decoration: none; }
+    .title-cell a:hover { text-decoration: underline; }
+    .ts { color: #555; font-size: 0.8rem; white-space: nowrap; }
+    .status { font-size: 1.1rem; text-align: center; }
+    tr.pass .status { color: #16a34a; }
+    tr.fail .status { color: #dc2626; }
+    tr.warn .status { color: #d97706; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Hacker News Sort Order Validation</h1>
+      <p>Run at 3/14/2026, 6:09:02 PM &nbsp;·&nbsp; 0.9s elapsed</p>
+    </div>
+    <span class="badge pass">PASS</span>
+  </header>
+  <div class="summary">
+    <div class="stat">
+      <div class="value">100</div>
+      <div class="label">Articles Checked</div>
+    </div>
+    <div class="stat violations">
+      <div class="value">0</div>
+      <div class="label">Sort Violations</div>
+    </div>
+    <div class="stat missing">
+      <div class="value">0</div>
+      <div class="label">Missing Timestamps</div>
+    </div>
+    <div class="stat">
+      <div class="value">2h 6m</div>
+      <div class="label">Time Span</div>
+    </div>
+    <div class="stat">
+      <div class="value">0.9s</div>
+      <div class="label">Elapsed</div>
+    </div>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Timestamp</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr class="pass">
+        <td>1</td>
+        <td class="title-cell"><a href="https://www.openttd.org/news/2026/03/14/steam-changes" target="_blank">Changes to OpenTTD Distribution on Steam</a></td>
+        <td class="ts">2026-03-14T22:04:48</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>2</td>
+        <td class="title-cell"><a href="https://soundsplitter.vercel.app/" target="_blank">Memorize song&amp;audio files through splitting and repeating parts automatically</a></td>
+        <td class="ts">2026-03-14T22:04:14</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>3</td>
+        <td class="title-cell"><a href="https://news.ycombinator.com/item?id=47381738" target="_blank">Ask HN: Do you care if coding agents use your generated code for training?</a></td>
+        <td class="ts">2026-03-14T22:03:54</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>4</td>
+        <td class="title-cell"><a href="https://sebi.io/posts/2026-03-14-allow-me-to-get-to-know-you-mistakes-and-all/" target="_blank">Allow me to get to know you, mistakes and all</a></td>
+        <td class="ts">2026-03-14T22:03:47</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>5</td>
+        <td class="title-cell"><a href="https://stigmollerhansen.dk/resume/learning-creative-coding/" target="_blank">Learning Creative Coding</a></td>
+        <td class="ts">2026-03-14T22:02:48</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>6</td>
+        <td class="title-cell"><a href="https://vercel.com/changelog/deprecating-the-dhe-cipher-suite-for-tls-connections" target="_blank">Deprecating the DHE cipher suite for TLS connections</a></td>
+        <td class="ts">2026-03-14T22:01:26</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>7</td>
+        <td class="title-cell"><a href="https://vercel.com/changelog/ai-elements-1-9" target="_blank">AI Elements 1.9 is now available</a></td>
+        <td class="ts">2026-03-14T22:00:23</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>8</td>
+        <td class="title-cell"><a href="https://github.com/vigil-agency/vigil" target="_blank">Vigil v1.1 – Open-source security ops platform with embedded AI brain</a></td>
+        <td class="ts">2026-03-14T21:59:02</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>9</td>
+        <td class="title-cell"><a href="https://github.com/peakoss/anti-slop" target="_blank">Anti-Slop: A GitHub action that detects and automatically closes AI slop PRs</a></td>
+        <td class="ts">2026-03-14T21:58:10</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>10</td>
+        <td class="title-cell"><a href="https://www.getcostly.dev/" target="_blank">Show HN: Costly – Open-source SDK that audits your LLM API costs</a></td>
+        <td class="ts">2026-03-14T21:57:33</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>11</td>
+        <td class="title-cell"><a href="https://www.youtube.com/watch?v=NlcIEmYfTmc" target="_blank">Mystery Radio Signal from Day One of US-Iran War [video]</a></td>
+        <td class="ts">2026-03-14T21:52:03</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>12</td>
+        <td class="title-cell"><a href="https://github.com/CrunchyJohnHaven/elastifund" target="_blank">Show HN: I built an open-source agent-run trading fund with real capital</a></td>
+        <td class="ts">2026-03-14T21:49:33</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>13</td>
+        <td class="title-cell"><a href="https://theaustralian.com.au/business/technology/tech-boss-uses-ai-and-chatgpt-to-create-cancer-vaccine-for-his-dying-dog/news-story/292a21bcbe93efa17810bfcfcdfadbf7?123#qwe" target="_blank">Tech boss uses AI and ChatGPT to create cancer vaccine for his dying dog</a></td>
+        <td class="ts">2026-03-14T21:47:04</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>14</td>
+        <td class="title-cell"><a href="https://freddiedeboer.substack.com/p/what-people-want-from-our-schools" target="_blank">What People Want from Our Schools Has Never Been Accomplished, Anywhere</a></td>
+        <td class="ts">2026-03-14T21:44:19</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>15</td>
+        <td class="title-cell"><a href="https://www.cnbc.com/2026/03/14/kalshi-prediction-markets-bet-luana-lopes-lara.html" target="_blank">Kalshi co-founder on risky predictions she made that led to $1B</a></td>
+        <td class="ts">2026-03-14T21:44:12</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>16</td>
+        <td class="title-cell"><a href="https://github.com/armgabrielyan/deadbranch" target="_blank">Show HN: I built a TUI that dissolves Git branches away in Thanos style</a></td>
+        <td class="ts">2026-03-14T21:44:11</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>17</td>
+        <td class="title-cell"><a href="https://hardlyworking1.substack.com/p/a-skeptical-case-for-taking-the-ai" target="_blank">An AI skeptic's case for recursive self-improvement</a></td>
+        <td class="ts">2026-03-14T21:42:12</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>18</td>
+        <td class="title-cell"><a href="https://news.ycombinator.com/item?id=47381501" target="_blank">Everyone is focusing on AI, we're focusing on humans</a></td>
+        <td class="ts">2026-03-14T21:39:14</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>19</td>
+        <td class="title-cell"><a href="https://www.reuters.com/technology/bytedance-suspends-launch-video-ai-model-after-copyright-disputes-information-2026-03-14/" target="_blank">ByteDance suspends launch of Seedance 2.0 after copyright disputes</a></td>
+        <td class="ts">2026-03-14T21:38:09</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>20</td>
+        <td class="title-cell"><a href="https://www.mailparse.dev/" target="_blank">Show HN: MailParse – Inbound email to structured JSON via API</a></td>
+        <td class="ts">2026-03-14T21:37:55</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>21</td>
+        <td class="title-cell"><a href="https://news.ycombinator.com/item?id=47381484" target="_blank">Ek_ Leaks Persist</a></td>
+        <td class="ts">2026-03-14T21:37:46</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>22</td>
+        <td class="title-cell"><a href="https://coalton-lang.github.io/20260312-coalton0p2/" target="_blank">A Preview of Coalton 0.2</a></td>
+        <td class="ts">2026-03-14T21:36:51</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>23</td>
+        <td class="title-cell"><a href="https://medium.com/@mokrasar/the-last-chip-how-hardwired-ai-will-destroy-nvidias-empire-and-change-the-world-8da20571e706" target="_blank">How &quot;Hardwired&quot; AI Will Destroy Nvidia's Empire and Change the World</a></td>
+        <td class="ts">2026-03-14T21:36:36</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>24</td>
+        <td class="title-cell"><a href="https://news.ycombinator.com/item?id=47381471" target="_blank">Show HN: Replacing $50k manual forensic audits with a deterministic .py engine</a></td>
+        <td class="ts">2026-03-14T21:36:13</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>25</td>
+        <td class="title-cell"><a href="https://www.nicowil.me/posts/the-missing-validation-layer/" target="_blank">Validation is your agent's bottleneck</a></td>
+        <td class="ts">2026-03-14T21:35:18</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>26</td>
+        <td class="title-cell"><a href="https://reactorlowcode.com/" target="_blank">Visual React Layout Builder</a></td>
+        <td class="ts">2026-03-14T21:35:11</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>27</td>
+        <td class="title-cell"><a href="https://insideduckduckgo.substack.com/p/duck-tales-why-duckduckgo-is-building" target="_blank">Why DuckDuckGo is building its own web search index</a></td>
+        <td class="ts">2026-03-14T21:33:03</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>28</td>
+        <td class="title-cell"><a href="https://www.llmonestop.com/#pricing" target="_blank">Show HN: AI coding agent for VS Code with pay-as-you-go pricing- no subscription</a></td>
+        <td class="ts">2026-03-14T21:30:09</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>29</td>
+        <td class="title-cell"><a href="https://medium.com/leapfrog/why-switzerland-is-a-3rd-world-country-7fe5d67a079" target="_blank">Why Switzerland is a 3rd world country</a></td>
+        <td class="ts">2026-03-14T21:29:24</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>30</td>
+        <td class="title-cell"><a href="https://monolith-project.org/blog/march-2026-update/" target="_blank">Show HN: My OS can run Doom</a></td>
+        <td class="ts">2026-03-14T21:28:36</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>31</td>
+        <td class="title-cell"><a href="https://www.w3.org/TR/ethical-web-principles/" target="_blank">Ethical Web Principles</a></td>
+        <td class="ts">2026-03-14T21:28:28</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>32</td>
+        <td class="title-cell"><a href="https://github.com/xodn348/han" target="_blank">Show HN: Han – A Korean programming language written in Rust</a></td>
+        <td class="ts">2026-03-14T21:27:33</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>33</td>
+        <td class="title-cell"><a href="https://zaneops.dev/" target="_blank">Show HN: ZaneOps, A beautiful and fast self hosted alternative to Vercel</a></td>
+        <td class="ts">2026-03-14T21:26:12</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>34</td>
+        <td class="title-cell"><a href="https://www.anthropic.com/news/claude-partner-network" target="_blank">Anthropic invests $100M into the Claude Partner Network</a></td>
+        <td class="ts">2026-03-14T21:23:42</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>35</td>
+        <td class="title-cell"><a href="https://cursor.com/" target="_blank">Cursor billed us $450 for a seat that existed for seconds</a></td>
+        <td class="ts">2026-03-14T21:23:35</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>36</td>
+        <td class="title-cell"><a href="https://nickdichev.com/blog/you-can-just-deploy-things/" target="_blank">You Can Just Deploy Things</a></td>
+        <td class="ts">2026-03-14T21:21:32</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>37</td>
+        <td class="title-cell"><a href="https://valyris.app/" target="_blank">Valyris – startup valuation using 7 VC frameworks</a></td>
+        <td class="ts">2026-03-14T21:20:55</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>38</td>
+        <td class="title-cell"><a href="http://urbanjost.altervista.org/LIBRARY/public_html/VI/exrc_files/exrc_ADVANCED.html" target="_blank">The Advanced .exrc File (1991)</a></td>
+        <td class="ts">2026-03-14T21:17:24</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>39</td>
+        <td class="title-cell"><a href="https://www.nytimes.com/2026/03/13/business/jared-kushner-affinity-mideast-funds.html" target="_blank">Jared Kushner Solicits Funds for His Firm While Working as Mideast Envoy</a></td>
+        <td class="ts">2026-03-14T21:16:53</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>40</td>
+        <td class="title-cell"><a href="https://weightythoughts.com/p/how-a-regular-person-can-utilize" target="_blank">A Regular Person Can Utilize AI Agents</a></td>
+        <td class="ts">2026-03-14T21:15:12</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>41</td>
+        <td class="title-cell"><a href="https://github.com/0xNaN/ngrep" target="_blank">Show HN: ngrep – grep plus word embeddings</a></td>
+        <td class="ts">2026-03-14T21:15:01</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>42</td>
+        <td class="title-cell"><a href="https://db9.ai/" target="_blank">Postgres with Builtin File Systems</a></td>
+        <td class="ts">2026-03-14T21:14:03</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>43</td>
+        <td class="title-cell"><a href="https://www.aetheros.computer/" target="_blank">Arther OS – Web desktop environment on the AT Protocol</a></td>
+        <td class="ts">2026-03-14T21:12:21</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>44</td>
+        <td class="title-cell"><a href="https://www.axios.com/2026/03/14/the-gamification-of-war" target="_blank">America gamified its war with Iran</a></td>
+        <td class="ts">2026-03-14T21:09:46</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>45</td>
+        <td class="title-cell"><a href="https://www.reuters.com/investigates/special-report/global-art-banksy/" target="_blank">In search of Banksy, Reuters found the artist took on a new identity</a></td>
+        <td class="ts">2026-03-14T21:07:39</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>46</td>
+        <td class="title-cell"><a href="https://beej.us/blog/data/ai-making/" target="_blank">Making</a></td>
+        <td class="ts">2026-03-14T21:05:47</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>47</td>
+        <td class="title-cell"><a href="https://github.com/akdeb/open-toys/blob/main/README.md" target="_blank">Show HN: AI Toys that don't need the internet</a></td>
+        <td class="ts">2026-03-14T21:04:58</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>48</td>
+        <td class="title-cell"><a href="https://agenticsearchoptimization.ai/" target="_blank">Show HN: Million Dollar Homepage for AI Agents – agents buy pixels, humans watch</a></td>
+        <td class="ts">2026-03-14T21:03:38</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>49</td>
+        <td class="title-cell"><a href="https://karpathy.ai/jobs/" target="_blank">Andrej Karpathy - AI Exposure of the US Job Market</a></td>
+        <td class="ts">2026-03-14T21:01:16</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>50</td>
+        <td class="title-cell"><a href="https://news.ycombinator.com/item?id=47381118" target="_blank">16-agent local AI OS and wrote up the routing and pipeline architecture</a></td>
+        <td class="ts">2026-03-14T21:01:14</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>51</td>
+        <td class="title-cell"><a href="https://www.webmasterworld.com/google/5130001-2-30.htm" target="_blank">March 2026 Google Search Observations</a></td>
+        <td class="ts">2026-03-14T20:59:57</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>52</td>
+        <td class="title-cell"><a href="https://polsia.com/live" target="_blank">$3.5M run rate. +$2M in a week. One founder and AI. Zero employees</a></td>
+        <td class="ts">2026-03-14T20:56:37</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>53</td>
+        <td class="title-cell"><a href="https://www.afterbabel.com/p/30-facts-about-childhood-today-that" target="_blank">Facts About Childhood Today That Will Terrify You</a></td>
+        <td class="ts">2026-03-14T20:55:36</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>54</td>
+        <td class="title-cell"><a href="https://cloak.opsy.sh/" target="_blank">Show HN: Cloak – send and receive secrets from OpenClaw</a></td>
+        <td class="ts">2026-03-14T20:54:42</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>55</td>
+        <td class="title-cell"><a href="https://economist.com/finance-and-economics/2026/03/12/why-investors-wont-know-what-to-make-of-ai-for-a-while" target="_blank">Why investors won't know what to make of AI for a while</a></td>
+        <td class="ts">2026-03-14T20:49:55</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>56</td>
+        <td class="title-cell"><a href="https://json.express/" target="_blank">Show HN: Json.express – Query and explore JSON in the browser, zero dependencies</a></td>
+        <td class="ts">2026-03-14T20:49:47</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>57</td>
+        <td class="title-cell"><a href="https://www.smithsonianmag.com/science-nature/bumblebee-queens-breathe-underwater-to-survive-drowning-revealing-how-they-can-live-submerged-for-a-week-180988330/" target="_blank">Bumblebee queens breathe underwater to survive drowning</a></td>
+        <td class="ts">2026-03-14T20:49:10</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>58</td>
+        <td class="title-cell"><a href="https://www.youtube.com/watch?v=_gvhfxM5hRg" target="_blank">Show HN: R3forth Visual Debugger [video]</a></td>
+        <td class="ts">2026-03-14T20:47:18</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>59</td>
+        <td class="title-cell"><a href="https://pidrive.ressl.ai/" target="_blank">Show HN: Pidrive – File storage for AI agents (mount S3, use ls/cat/grep)</a></td>
+        <td class="ts">2026-03-14T20:46:19</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>60</td>
+        <td class="title-cell"><a href="https://thezvi.substack.com/p/ai-159-see-you-in-court" target="_blank">AI #159: See You in Court</a></td>
+        <td class="ts">2026-03-14T20:45:27</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>61</td>
+        <td class="title-cell"><a href="https://news.ycombinator.com/item?id=47380974" target="_blank">Show HN: Docgen – A C++ AI CLI to solve documentation hell with local LLMs</a></td>
+        <td class="ts">2026-03-14T20:44:37</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>62</td>
+        <td class="title-cell"><a href="https://news.ycombinator.com/item?id=47380940" target="_blank">Ask HN: What was it like for programmers when spreadsheets became ubiquitous?</a></td>
+        <td class="ts">2026-03-14T20:40:20</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>63</td>
+        <td class="title-cell"><a href="https://link.springer.com/article/10.1186/s41235-025-00700-y" target="_blank">Is this real? Susceptibility to deepfakes in machines and humans</a></td>
+        <td class="ts">2026-03-14T20:40:12</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>64</td>
+        <td class="title-cell"><a href="https://www.youtube.com/watch?v=qiAZd_Ut9sg" target="_blank">The Price of College [video]</a></td>
+        <td class="ts">2026-03-14T20:40:09</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>65</td>
+        <td class="title-cell"><a href="https://old.reddit.com/r/PisequaltoNP/comments/1rtu4j5/solving_monotone_sat_in_om_log_n_via_binary/" target="_blank">Reddit Post 3</a></td>
+        <td class="ts">2026-03-14T20:38:56</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>66</td>
+        <td class="title-cell"><a href="https://github.com/bisbeebucky/ai-bot/" target="_blank">Kalverion Bot Overdraft Stopper new release</a></td>
+        <td class="ts">2026-03-14T20:38:16</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>67</td>
+        <td class="title-cell"><a href="https://midwesthumble.substack.com/p/expanding-ecosystems" target="_blank">Expanding Ecosystems (Michigan)</a></td>
+        <td class="ts">2026-03-14T20:37:39</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>68</td>
+        <td class="title-cell"><a href="https://news.ycombinator.com/item?id=47380906" target="_blank">Please don't write about AI with AI</a></td>
+        <td class="ts">2026-03-14T20:37:16</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>69</td>
+        <td class="title-cell"><a href="https://www.cbc.ca/lite/story/9.7125919" target="_blank">The medical advice on peanut allergies flipped in a generation</a></td>
+        <td class="ts">2026-03-14T20:34:44</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>70</td>
+        <td class="title-cell"><a href="https://howtocenterdiv.com/beyond-the-div/microservices-shackles-on-your-feet" target="_blank">Microservices: Shackles on Your Feet</a></td>
+        <td class="ts">2026-03-14T20:28:34</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>71</td>
+        <td class="title-cell"><a href="https://ringmast4r.substack.com/p/the-osint-gatekeepers-who-cant-secure" target="_blank">Bellingcat: The Osint Gatekeepers Who Can't Secure Their Own Site</a></td>
+        <td class="ts">2026-03-14T20:24:48</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>72</td>
+        <td class="title-cell"><a href="https://www.dailymail.co.uk/health/article-15643615/pill-cure-sleep-apnea-CPAP-breathing.html" target="_blank">Daily pill may cure deadly sleep disorder that affects 84M people</a></td>
+        <td class="ts">2026-03-14T20:24:08</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>73</td>
+        <td class="title-cell"><a href="https://news.ycombinator.com/item?id=47380784" target="_blank">Ask HN: How do you find collaborators?</a></td>
+        <td class="ts">2026-03-14T20:23:51</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>74</td>
+        <td class="title-cell"><a href="https://finance.yahoo.com/news/iran-war-could-wreak-havoc-on-farmers-create-a-potential-bottleneck-for-the-entire-ai-story-171240723.html" target="_blank">Iran war's Qatari Helium production disruption is a blow to chipmakers like TSMC</a></td>
+        <td class="ts">2026-03-14T20:23:39</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>75</td>
+        <td class="title-cell"><a href="https://www.theguardian.com/technology/2026/mar/13/meta-layoffs-ai" target="_blank">Meta reportedly plans layoffs as AI costs increase</a></td>
+        <td class="ts">2026-03-14T20:22:24</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>76</td>
+        <td class="title-cell"><a href="https://usevibescore.com/" target="_blank">Do you ship vibe coded apps with security issues?</a></td>
+        <td class="ts">2026-03-14T20:21:16</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>77</td>
+        <td class="title-cell"><a href="https://www.dailymail.co.uk/news/article-15645675/us-extreme-weather-forecast-weekend-heat-polar-vortex-floods.html" target="_blank">US told to brace for extreme weather in every single state</a></td>
+        <td class="ts">2026-03-14T20:21:06</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>78</td>
+        <td class="title-cell"><a href="https://www.nytimes.com/2026/03/11/arts/minecraft-uncensored-library-united-states.html" target="_blank">Where Censored Words Find a Safe Haven: Inside Minecraft</a></td>
+        <td class="ts">2026-03-14T20:18:52</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>79</td>
+        <td class="title-cell"><a href="https://washingtonian.com/2026/03/12/the-washington-post-is-using-reader-data-to-set-subscription-prices-how-does-that-work/" target="_blank">The Washington Post Is Using Reader Data to Set Subscription Prices</a></td>
+        <td class="ts">2026-03-14T20:18:41</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>80</td>
+        <td class="title-cell"><a href="https://viggy28.dev/article/postgres-gateway-drug/" target="_blank">Postgres Is the Gateway Drug</a></td>
+        <td class="ts">2026-03-14T20:17:35</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>81</td>
+        <td class="title-cell"><a href="https://engineering.fb.com/2026/02/09/data-center-engineering/building-prometheus-how-backend-aggregation-enables-gigawatt-scale-ai-clusters/" target="_blank">Back End Aggregation Enables Gigawatt-Scale AI Clusters</a></td>
+        <td class="ts">2026-03-14T20:17:14</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>82</td>
+        <td class="title-cell"><a href="https://www.libraryofshortstories.com/" target="_blank">Library of Short Stories</a></td>
+        <td class="ts">2026-03-14T20:16:19</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>83</td>
+        <td class="title-cell"><a href="https://nationalinterest.org/blog/reboot/millennium-challenge-iran-destroyed-america-war-game-197261" target="_blank">Millennium Challenge: Iran Destroyed America in a War Game</a></td>
+        <td class="ts">2026-03-14T20:16:10</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>84</td>
+        <td class="title-cell"><a href="https://engineering.fb.com/2026/03/13/android/ai-codemods-secure-by-default-android-apps-meta-tech-podcast/" target="_blank">AI Codemods for Secure-by-Default Android Apps</a></td>
+        <td class="ts">2026-03-14T20:15:58</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>85</td>
+        <td class="title-cell"><a href="https://mlbenchmarks.org/00-preface.html" target="_blank">Book: The Emerging Science of Machine Learning Benchmarks</a></td>
+        <td class="ts">2026-03-14T20:15:03</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>86</td>
+        <td class="title-cell"><a href="https://github.com/davitotty/pipechart" target="_blank">Pipechart – pipe any JSON into your terminal and get a chart, zero dependencies</a></td>
+        <td class="ts">2026-03-14T20:14:52</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>87</td>
+        <td class="title-cell"><a href="https://github.com/akdeb/open-toys" target="_blank">Show HN: AI Toys that don't need the internet</a></td>
+        <td class="ts">2026-03-14T20:13:01</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>88</td>
+        <td class="title-cell"><a href="https://simonwillison.net/2026/Mar/14/pragmatic-summit/" target="_blank">My fireside chat about agentic engineering at the Pragmatic Summit</a></td>
+        <td class="ts">2026-03-14T20:09:28</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>89</td>
+        <td class="title-cell"><a href="https://arnoldkling.substack.com/p/my-wish-for-software-engineering" target="_blank">My Wish for Software Engineering</a></td>
+        <td class="ts">2026-03-14T20:09:01</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>90</td>
+        <td class="title-cell"><a href="https://support.claude.com/en/articles/14063676-claude-march-2026-usage-promotion" target="_blank">Claude March 2026 usage promotion</a></td>
+        <td class="ts">2026-03-14T20:08:54</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>91</td>
+        <td class="title-cell"><a href="https://github.com/charmbracelet/glow" target="_blank">Glow: Render Markdown on the CLI, with Pizzazz</a></td>
+        <td class="ts">2026-03-14T20:08:48</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>92</td>
+        <td class="title-cell"><a href="https://apps.apple.com/us/app/brzzy-weather-local-forecasts/id6670187343" target="_blank">I rebuilt a daily habit because the default experience felt broken</a></td>
+        <td class="ts">2026-03-14T20:08:13</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>93</td>
+        <td class="title-cell"><a href="https://www.theguardian.com/technology/2026/mar/14/tiktok-trump-administration-10bn" target="_blank">Trump administration to be paid $10B for brokering TikTok deal</a></td>
+        <td class="ts">2026-03-14T20:07:44</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>94</td>
+        <td class="title-cell"><a href="https://github.com/ChristianFJung/paperctl" target="_blank">Show HN: Paperctl- An Arxiv CLI designed for agents</a></td>
+        <td class="ts">2026-03-14T20:04:44</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>95</td>
+        <td class="title-cell"><a href="https://www.sciencedirect.com/science/article/pii/S2213231726000650" target="_blank">Activity-based CO2 sensing provides new insights into cellular metabolism</a></td>
+        <td class="ts">2026-03-14T20:03:56</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>96</td>
+        <td class="title-cell"><a href="https://github.com/Csnyi/VFA-Spec" target="_blank">VFA – Cryptographic Intent Handshake for Secure API Transactions</a></td>
+        <td class="ts">2026-03-14T20:02:09</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>97</td>
+        <td class="title-cell"><a href="https://www.cathar.info/" target="_blank">Cathars and Cathar Beliefs in the Languedoc</a></td>
+        <td class="ts">2026-03-14T20:01:57</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>98</td>
+        <td class="title-cell"><a href="https://www.languagelife.ai/" target="_blank">Show HN: Language Life – Learn a language by living a simulated life</a></td>
+        <td class="ts">2026-03-14T20:01:53</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>99</td>
+        <td class="title-cell"><a href="https://bsky.app/profile/html5test.com/post/3mgxr3pcjhk2k" target="_blank">DOOM fully rendered in CSS</a></td>
+        <td class="ts">2026-03-14T20:01:53</td>
+        <td class="status">✓</td>
+      </tr>
+      <tr class="pass">
+        <td>100</td>
+        <td class="title-cell"><a href="https://www.anthropic.com/news/the-anthropic-institute" target="_blank">The Anthropic Institute</a></td>
+        <td class="ts">2026-03-14T19:58:51</td>
+        <td class="status">✓</td>
+      </tr></tbody>
+    </table>
+  </div>
+</body>
+</html>
