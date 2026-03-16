@@ -3,7 +3,7 @@
 Automated validator that confirms Hacker News surfaces its newest 100 articles 
 in correct chronological order. Built with Playwright and Node.js.
 
-![CI](https://github.com/YOUR_USERNAME/hn-sort-validator/actions/workflows/test.yml/badge.svg)
+![CI](https://github.com/swang9/hn-sort-validator/actions/workflows/test.yml/badge.svg)
 
 ## What it does
 
